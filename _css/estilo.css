@@ -1,0 +1,389 @@
+@charset "UTF-8";
+/* Created on : 26/01/2019, 19:26:18
+   Author     : welington*/
+/*======Reset======*/
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+}
+body{
+    background-color: #eeeeee;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+/*======Container======*/
+.container{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+}
+/*======BG Color======*/
+.bg-black{
+    background-color: #140400;
+}
+.bg-white{
+    background-color: whitesmoke;
+}
+.bg-gradiente{
+    background: linear-gradient(to right ,#ce2e3c,#da6709);
+}
+/*======Helpers======*/
+.radius{
+    border-radius: 7px;
+}
+/*======Cabeçalho======*/
+.logo{
+    width: 56px;height: 56px;float: left;font-size: 0px;
+    background: url(../_imagens/slogo.png) center center/56px no-repeat;
+}
+.btn-menu{
+    width: 56px;
+    height: 56px;
+    float: right;
+    text-align: center;
+    color:
+    whitesmoke;border-radius: 56px;
+    cursor: pointer;
+}
+/*======Menu======*/
+.menu{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+}
+.btn-close{
+    font-size: 1.5em;
+    color: whitesmoke;
+    float: right;
+    cursor: pointer;
+    margin: 2% 2% 0 0;
+}
+.menu ul {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.menu li{
+    padding: 1.5%;
+}
+.menu li a{
+    font-size: 2em;
+    color: white;
+    padding: 1.5% 3%;
+}
+.menu li a:hover {
+    background-color:#da6709;
+    border: 1px solid #da6709;
+}
+/*======Banner======*/
+.banner{
+    background: url(../_imagens/bg.jpg) no-repeat fixed;
+}
+.title{
+    width: 100%;
+}
+.banner h2{
+    font-size: 2.5em;
+    color:whitesmoke;
+    font-weight: 700;
+}
+.banner h3{
+    font-size: 2.0em;
+    color:whitesmoke;
+}
+.buttons{
+    width: 100%;
+    margin-top: 2%;
+}
+.buttons i{
+    float: right;
+}
+.btn{
+    width: 100%;
+    font-size: 1.5em;
+    text-align: left;
+    cursor: pointer;
+    padding: 5%;
+}
+.btn-cadastrar{
+    color: #140400;
+}
+.btn-cursos{
+    color: whitesmoke;
+    margin-top: 2%;
+}
+/*======Servicos======*/
+.servico{
+    width: 100%;
+    text-align: left; 
+    margin-bottom: 3%; 
+    margin-top: 3%;
+}
+.servico img {
+    border-radius: 7px 7px 0 0;
+}
+.inner{
+    padding: 7%;
+}
+.inner a{
+    font-size: 1.5em;
+    color: #140400;
+    font-weight: 700;
+}
+.inner h4{
+    font-size: 1.2em;
+    color: #140400;
+    margin-top: 2%;
+}
+.inner p{
+    margin-top: 6%;
+    color: #140400;
+    line-height: 1.5em;
+}
+.newsletter h2 {
+    font-size: 1.5em;
+    color: whitesmoke;
+    font-weight: 700;
+}
+.newsletter h3 {
+    color: whitesmoke;
+}
+.newsletter form{
+    margin-top: 2%;
+}
+.newsletter input{
+    width: 100%;
+    color: rgba(255,255,255,0.3);
+    border: 1px solid white;
+    padding: 5%;
+}
+.newsletter button{
+    width: 100%;
+    color: #140400;
+    padding: 5%;
+    cursor: pointer;
+    margin-top: 2px;
+}
+.rodape {
+    background-color:gray;
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+}
+.social-icons a{
+    font-size: 1.5em;
+    color: rgba(255,255,255,0.7);
+    margin-right: 3%;
+}
+//tira o espaço do último elemento
+.social-icons a:last-child{
+    margin-right: 0;
+}
+.social-icons a:hover {
+    color: whitesmoke;
+}
+.copyright{
+    margin-top: 2%;color: rgba(255,255,255,0.7);
+}
+.moldura{
+    width: 80%;
+    height: 300px;
+    background-color: lightyellow;
+    transition:background-image 4s;
+    -webkit-transition: all 1s ease-in; 
+    display: none;
+}
+.voltar{
+    margin:auto;
+    background-color: #888888;
+    color: whitesmoke; 
+    display: none;
+}
+.ir{
+    background-color: #888888;
+    color: whitesmoke; 
+    display: none;
+}
+.pri{
+    text-transform: capitalize;
+}
+span.valorpago{
+    color: green;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+span.valorgratis{
+    color: blue;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.pago{
+    color: green;
+    font-weight: bolder;
+    background: yellowgreen;
+}
+.pendente{
+    font-size: 1.2em;
+    color: orangered;
+    background: wheat;
+    font-weight: bolder;
+}
+.gratis{
+    color: blue;
+    background: lightskyblue;
+    font-weight: bolder;
+}
+/*======Mobile First======*/
+@media screen and (min-width: 480px){ 
+ .logo{
+     width: 269px;
+     height: 62px;
+     background: url(../_imagens/logo.png) center center/269px no-repeat;
+    }
+ .btn{
+     font-size: 2em;
+    }
+}
+@media screen and (min-width: 768px){
+ .servico{
+     width: 48%;
+     float: left;
+     margin-right: 2%;
+ }
+ .servico:nth-child(2){
+     margin-right: 0;
+ }
+.newsletter h2{
+    font-size: 2em;
+}
+.newsletter h3{
+    font-size: 1.5em;
+}
+.newsletter input{
+    width: 69%;
+    padding: 2%;
+    float: left;
+    margin-right: 1%;
+}
+.newsletter button{
+    width: 30%;
+    padding: 2%;
+    float:right;
+    margin-top: 0;}
+.moldura{
+    display: none;
+}
+.voltar{
+    display: none;
+}
+.ir{
+    display: none;
+}
+}
+/*Medium Devices - Tablets and Desktops*/
+@media screen and (min-width: 960px){
+.title{
+    width: 70%;
+    float: left;
+    text-align: left;
+}
+.buttons{
+    width: 30%;
+    float: right;
+    margin-top: 0;
+}
+.title h2{
+    font-size: 3em;
+}
+.title h3{
+    font-size: 2em;
+}
+.servico{
+    width: 31%;
+}
+.servico:nth-child(2){
+    margin-right: 2%;
+}
+.servico:nth-child(3){
+    margin-right: 0;
+}
+.newsletter input{
+    width: 40%;
+    float: none;
+}
+.newsletter button{
+    widows: 20%;
+    float: none;
+}
+} 
+/*Medium Devices - Tablets and Desktops*/
+@media screen and (min-width: 1280px){
+.btn-menu{
+    display: none;
+}    
+.btn-close{
+    display: none;
+}
+.menu{
+    width: auto;
+    height: 56px;
+    line-height: 56px;
+    float: right;
+    background-color: #eeeeee;
+    display: block !important;
+    position: static;
+    margin-right: 50px;
+}
+.menu li {
+    padding: 0px;
+    float: left;
+    padding-left: 5px; 
+    padding-right: 5px;
+}
+.menu li a{
+    color: #144000;
+    font-size: 1.4em;
+    padding: 20px;
+}
+.menu li a:hover{
+    border: none; 
+    background-color: #da6709; 
+    color: whitesmoke;
+    transition: background-color .5s;
+}
+.moldura{
+    width: 1200px;
+    height: 500px;
+    display: block;
+}
+.voltar{
+    font-size: 2em;
+    display: block; 
+    float: left; 
+    margin-left:49%;
+    margin-right:1%;
+}
+.ir{
+    font-size: 2em;
+    display: block;
+}
+}
