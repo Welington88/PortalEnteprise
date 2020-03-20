@@ -346,5 +346,4 @@ if(isset($_REQUEST['acesso'])){
          . 'alert("Erro ao acessar o Sistema!\nSeu Usuário não possui permissão '
          . 'para acessar essa página!!!!");'
          . '</script>';
- }
-?>  
+ }?>  
