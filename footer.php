@@ -6,7 +6,7 @@
         <a href="contato.php"><i class="fa fa-envelope"></i></a>
     </div>
     <div class="copyright">
-        Copyright2020&COPY;<br/>
+        Copyright2021&COPY;<br/>
         Developer Welington Marquezini
     </div>
 </footer>
