@@ -5,9 +5,9 @@
  * @author welin
  */
 class UrlBD {
-    private $dsn = "mysql:host=localhost;dbname=alunos"; 
-    private $username = "root"; 
-    private $passwd = "";
+    private $dsn = "mysql:host=localhost:51337;dbname=localdb"; 
+    private $username = "azure"; 
+    private $passwd = "6#vWHD_$";
             
     function __construct() {
         
