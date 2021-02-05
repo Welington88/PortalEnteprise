@@ -15,7 +15,7 @@ if((isset($_SESSION['emails'])) && (isset($_SESSION['senhas']))){
 </hgroup>
 <div id="texto">
 <form method="post" class="formmenu" name="formLogin" action="login.php" onsubmit="return validaLogin();">
-<fieldset id="usuario"><legend>Faça o Login Abaixo:</legend>
+<fieldset id="usuario"><legend>Faça o Login Abaixo:</legend><br/>
     <?php if(isset($_REQUEST['nlogin'])){
     echo "<h4>Usuário ou senha inválidos</h4>";}
           if(isset($_REQUEST['acesso'])){
